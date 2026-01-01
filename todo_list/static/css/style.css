@@ -1,0 +1,168 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f2f5;
+}
+
+/* User greeting */
+.user-greeting {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Container for Todo */
+.signup-login {
+  width: 100%;
+  max-width: 450px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading */
+.signup-box .heading {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #565454;
+}
+
+/* Line under heading */
+.signup-box .line {
+  width: 50px;
+  height: 3px;
+  background: #007bff;
+  margin: 0 auto 20px auto;
+  border-radius: 2px;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    color:  rgb(87, 86, 86);
+    unicode-bidi: isolate;
+}
+
+/* Form Fields */
+form input[type="text"] {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+form input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-button:hover {
+  background: #0056b3;
+}
+
+/* Todo Items */
+.Todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(212, 201, 201);
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.Todo:hover {
+  background: #e6f0ff;
+}
+
+
+.Todo h5 {
+    font-size: 14px;
+    color: rgb(64, 64, 64);
+}
+
+.Todo div p {
+    font-size: 16px;
+    color: rgb(64, 64, 64);
+    margin: 0;
+}
+
+/* Edit/Delete Buttons aligned like Add Task */
+ .Todo div a {
+    margin-left: 10px;
+    background: #007bff;
+    padding: 5px 8px;
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.Todo div a:hover {
+  background: #0056b3;
+}
+
+/* Logout Icon */
+.fa-arrow-right-from-bracket {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.fa-arrow-right-from-bracket:hover {
+  color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .signup-login {
+    padding: 20px;
+  }
+
+  .signup-box .heading {
+    font-size: 24px;
+  }
+
+  .Todo p {
+    font-size: 14px;
+  }
+}
